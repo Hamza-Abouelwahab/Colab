@@ -4,10 +4,10 @@
 }
 .container{
     display: flex;
-    width: 100vw;
-    height: 100vh;
+    /* height: 100vh; */
 }
 .container  .left-side{
+    height: fit-content;
     padding: 2vw 1.5vw;
     background-color: rgba(79, 82, 82, 0.202);
     width: 25%;
@@ -44,6 +44,7 @@
     display: flex;
     flex-direction: column;
     gap: 1vw;
+    /* padding-bottom: 1vw; */
 }
 .navbar > nav > .cart{
     display: flex;
@@ -71,6 +72,45 @@
     border-radius: 0.5vw;
 }
 
+.group{
+    padding: 2vw 0;
+    border-top: solid 0.5px #0000002e ;
+    border-bottom: solid 0.5px #0000002e;
+    display: flex;
+    flex-direction: column;
+    gap: 1vw;
+    
+}
+.group .plus{
+    display: flex;
+    justify-content: space-between;
+    font-size: small;
+}
+.group .box1{
+    background-color: white;
+    border-left:solid #444448d0 ;
+    border-radius:5px ;
+    color: black;
+}
+
+.list{
+    gap: 1vw;
+    display: flex;
+    flex-direction: column;
+    padding-left:3vw ;
+
+}
+.list div{
+    display: flex;
+    gap: 0.5vw;
+    width: auto;
+}
+.new-gp{
+    display: flex;
+    gap: 1vw;
+    padding-bottom: 1.5vw;
+    border-bottom: solid 0.5px #0000002e;
+}
 
 /* * right-side */
 .container > .right-side{
