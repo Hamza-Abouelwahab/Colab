@@ -1,0 +1,81 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+}
+.container  .left-side{
+    padding: 2vw 1.5vw;
+    background-color: rgba(79, 82, 82, 0.202);
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    gap: 3vw;
+    color: #444448d0;
+}
+.left-side h2{
+    color: black;
+}
+.con-search{
+    display: flex;
+    flex-direction: row-reverse;
+    position: relative;
+}
+.con-search .search{
+    width: 100%;
+    padding: 1vh 2vw;
+    
+}
+.con-search > svg{
+    position: absolute;
+    top: 20%;
+    left:2%;
+}
+
+.navbar {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5vw;
+}
+.navbar nav{
+    display: flex;
+    flex-direction: column;
+    gap: 1vw;
+}
+.navbar > nav > .cart{
+    display: flex;
+    justify-content: space-between;
+}
+.navbar > nav .cart > div{
+    display: flex;
+    gap: 1vw;
+}
+.navbar > nav .cart > div a {
+    text-decoration: none;
+    color: #444448d0;
+}
+.navbar > nav > .cart input{
+    /* background-color: aqua; */
+    width: 25%;
+    text-align: center;
+    border-radius: 0.5vw;
+}
+.navbar > nav > .cart p{
+    background-color: #ff4000c6;
+    width: 8%;
+    color: white;
+    text-align: center;
+    border-radius: 0.5vw;
+}
+
+
+/* * right-side */
+.container > .right-side{
+    /* background-color: #2b26c368; */
+    width: 100%;
+}
+
+
