@@ -18,6 +18,17 @@
 }
 .left-side h2{
     color: black;
+    position: relative;
+}
+.left-side h2::before{
+    content: "";
+    width: 40%;
+    height: 3px;
+    background-image: linear-gradient(to left, purple,rgba(210, 204, 204, 0.679));
+    position: absolute;
+    bottom:0px;
+    left: 2px;
+    
 }
 .con-search{
     display: flex;
@@ -54,7 +65,7 @@
     display: flex;
     gap: 1vw;
 }
-.navbar > nav .cart > div a {
+a {
     text-decoration: none;
     color: #444448d0;
 }
@@ -86,11 +97,13 @@
     justify-content: space-between;
     font-size: small;
 }
-.group .box1{
+.group .box1 a{
     background-color: white;
     border-left:solid #444448d0 ;
     border-radius:5px ;
-    color: black;
+    width: 100%;
+    padding: 5px 15px;
+    color: lab(0% 0 0);
 }
 
 .list{
@@ -114,8 +127,100 @@
 
 /* * right-side */
 .container > .right-side{
-    /* background-color: #2b26c368; */
     width: 100%;
+    padding: 1vw 2vw;
 }
+.right-side .flex{
+    display: flex;
+    align-items: center;
+    gap: 1vw;
+}
+.right-side .flex p{
+    color: #444448d0;
+}
+.right-side .flex p::after{
+    content: "/";
+    padding-left: 1vw;
+    font-size: larger;
+    font-weight: bold;
+}
+.right-side .flex .box{
+    display: flex;
+    gap: 0.5vw;
+    color: rgb(0, 0, 0);
+}
+.right-side .flex .box a {
+    color: black;
+}
+.first-sd div img{
+    width: 2.5vw;
+    height: 2.5vw;
+    object-fit: cover;
+    border-radius: 50%;
+    object-position: 0 -5px;
+    display: flex;
+}
+.first-sd{
+    padding: 1.5vw 0;
+    display: flex;
+    justify-content: space-between;
+}
+.profial{
+    display: flex;
+    position: relative;
+    gap: 3vw;
+}
+.abs1{
+    position: absolute;
+    /* position: relative; */
+    left: 4%;
+}
+.abs2{
+    position: absolute;
+    left: 8%;
+}
+.buttons{
+    display: flex;
+    gap: 1vw;
+}
+.buttons .btn{
+    padding:1vh 3vw;
+    background-color: white;
+    border: solid 1px;
 
-
+}
+.buttons button{
+    padding: 1vh 1vh ;
+    background-color: white;
+    border: solid 1px ;
+    border-radius: 2px;
+    font-weight: bold;
+}
+.links{
+    padding: 1vw 0;
+    display: flex;
+    justify-content: space-between;
+}
+.links .left-links{
+    display: flex;
+    gap: 1vw;
+}
+.links .left-links a{
+    display: flex;
+    gap: 1vh;
+    border: 1px solid;
+    border-radius: 2px;
+    background-color: rgb(255, 253, 253);
+    padding: 0.3vw 1vw;
+}
+.links .right-links{
+    display: flex;
+    gap: 1vw;
+}
+.links .right-links div {
+    display: flex;
+    gap: 0.5vw;
+    border: 1px solid;
+    border-radius: 2px;
+    padding: 0.3vw 1vh;
+}
