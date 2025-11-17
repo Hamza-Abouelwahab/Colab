@@ -253,7 +253,7 @@ thead {
 
 th,
 td {
-  padding: 10px 10px;
+  padding: 5px 10px;
   text-align: left;
   border-bottom: 1px solid #eee;
 }
@@ -332,8 +332,8 @@ a:hover {
     left: -320px;
     transition: all 1s;
     z-index: 999;
-    height:auto;
-    padding-top: 26%;
+    height:810px;
+    /* padding-top: 26%; */
   }
   /* ^  */
   .left-side .intro {
@@ -443,4 +443,87 @@ a:hover {
   #print:checked ~ .container>.left-side {
     left: 0;
   }
+
+  /* * right-side */
+.container > .right-side {
+  width: 100%;
+  padding: 3vw 2vw;
+}
+.right-side .flex {
+  display: flex;
+  align-items: center;
+  gap: 2vw;
+}
+
+.right-side .flex .box {
+  display: flex;
+  align-items: center;
+  gap: 0.5vw;
+  color: rgb(0, 0, 0);
+}
+.right-side .flex .box a {
+  color: black;
+}
+.profial div  img {
+  width: 7.5vw;
+  height: 7.5vw;
+}
+.first-sd {
+
+  padding: 1.5vw 0;
+  display: flex;
+  justify-content: space-between;
+}
+.profial {
+  /* background-color: #20b2aa; */
+  display: flex;
+  position: relative;
+  gap: 8vw;
+}
+.abs1 {
+  position: absolute;
+  left: 6%;
+}
+.abs2 {
+  position: absolute;
+  left: 12%;
+}
+.buttons .btn {
+  color: black;
+}
+.buttons button {
+  color: black;
+}
+.links {
+  /* background-color: #007bff; */
+  padding: 1vw 0;
+  display: flex;
+  flex-direction: column;
+  gap: 5vw;
+  justify-content: space-between;
+}
+.links .left-links {
+  display: flex;
+  gap: 1vw;
+}
+.links .left-links a {
+  display: flex;
+  gap: 1vh;
+  border: 1px solid;
+  border-radius: 2px;
+  background-color: rgb(255, 253, 253);
+  padding: 0.3vw 1vw;
+}
+.links .right-links {
+  display: flex;
+  gap: 1vw;
+  padding-left: 60%;
+}
+.links .right-links div {
+  display: flex;
+  gap: 0.5vw;
+  border: 1px solid;
+  border-radius: 2px;
+  padding: 0.3vw 1vh;
+}
 }
