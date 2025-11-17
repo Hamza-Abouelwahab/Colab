@@ -255,6 +255,7 @@ th,
 td {
   padding: 5px 10px;
   text-align: left;
+  width: fit-content;
   border-bottom: 1px solid #eee;
 }
 
@@ -272,45 +273,45 @@ td {
   width: 110px;
   /* background-color: blue; */
 }
-
 .logo {
   width: 20px;
   height: 20px;
   object-position: 0 -1px;
 }
-
 table a {
   color: #007bff;
   text-decoration: none;
 }
-
 a:hover {
   text-decoration: underline;
 }
 
 /* Tier Colors */
 .tier {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   padding: 3px 6px;
   border-radius: 6px;
   font-size: 12px;
   color: white;
-  width: 50px;
+  width: 30px;
 }
 
 .tier1 {
-  background: #3cb371;
+  background: #3cb37269;
 }
 .tier2 {
-  background: #20b2aa;
+  background: #20b2ab7d;
 }
 .tier3 {
-  background: #9370db;
+  background: #9470db62;
 }
 .tier4 {
-  background: #ffa500;
+  background: #ffa6007a;
 }
 .tier5 {
-  background: #ff4500;
+  background: #ff440077;
 }
 #print{
     display: none;
@@ -332,15 +333,18 @@ a:hover {
     left: -320px;
     transition: all 1s;
     z-index: 999;
-    height:810px;
-    /* padding-top: 26%; */
+    height:auto;
   }
   /* ^  */
-  .left-side .intro {
+  .left-side .intro  {
     padding: 3vw 0;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+}
+.left-side .intro label{
+  color: black;
+  position: absolute;
+  right: 10px;
+  top: 20px;
+
 }
 .left-side .intro h2 {
   color: rgb(0, 0, 0);
@@ -354,7 +358,7 @@ a:hover {
   height: 2px;
 }
 .navbar {
-  gap: 10vw;
+  gap: 5vw;
 }
 .navbar nav {
   gap: 4vw;
@@ -369,8 +373,6 @@ a:hover {
     border-radius: 8px;
     padding: 3px 6px;
 }
-
-
 .navbar > nav > .cart input {
   /* background-color: aqua; */
   width: 25%;
@@ -384,10 +386,9 @@ a:hover {
   text-align: center;
   border-radius: 0.5vw;
 }
-
 .group {
-    /* background-color: #007bff; */
-  padding: 6vw 0;
+    /* background-color: #6793c3; */
+  padding: 3vw 0;
   border-top: solid 0.5px #0000002e;
   border-bottom: solid 0.5px #0000002e;
   display: flex;
@@ -420,17 +421,13 @@ a:hover {
   width: auto;
 }
 .new-gp {
-    padding-top: 20px;
+  padding-top: 15px;
   display: flex;
   gap: 2vw;
   padding-bottom: 6vw;
   border-bottom: solid 0.5px #0000002e;
 }
 
-  .right-side .table-container {
-    width: auto;
-    overflow: auto;
-  }
   #search {
     display: none;
   }
@@ -525,5 +522,77 @@ a:hover {
   border: 1px solid;
   border-radius: 2px;
   padding: 0.3vw 1vh;
+}
+/* * table */
+
+  .right-side .table-container {
+    width: auto;
+    overflow: auto;
+  }
+
+.table-container {
+  width: 100%;
+  background: rgb(255, 255, 255);
+  padding: 10px;
+  margin-top: 20px;
+  border-radius: 12px;
+  box-shadow: 0 3px 10px #ddd;
+}
+
+table {
+  /* background-color: #007bff; */
+  width: 100%;
+  overflow-x: auto;
+  border-collapse: collapse;
+  font-size: 14px;
+}
+
+thead {
+  background: #f2f2f2;
+}
+
+th,
+td {
+  padding: 5px 10px;
+  text-align: left;
+  border-bottom: 1px solid #eee;
+}
+
+.company {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  /* height: 40px; */
+}
+.person {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  /* background-color: blue; */
+}
+
+.logo {
+  width: 20px;
+  height: 20px;
+  object-position: 0 -1px;
+}
+
+table a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Tier Colors */
+.tier {
+  padding: 3px 6px;
+  border-radius: 6px;
+  font-size: 12px;
+  color: white;
+  
+  
 }
 }
